@@ -3,7 +3,7 @@
 
 #### **/sumToTarget**
 
-https://puzzapi.herokuapp.com/sumToTarget
+**URI:** https://puzzapi.herokuapp.com/sumToTarget
 
 Gets a solution to the 2SUM and 3SUM problem.
 
