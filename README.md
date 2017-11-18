@@ -1,7 +1,8 @@
 # **Endpoints**
 
+## Miscellaneous
 
-## /sumToTarget
+#### /sumToTarget
 
 **URI:** https://puzzapi.herokuapp.com/sumToTarget
 
