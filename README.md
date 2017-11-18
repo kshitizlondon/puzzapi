@@ -1,6 +1,3 @@
-# puzzapi
-
-
 ## Endpoints
 
 
@@ -14,7 +11,6 @@ Gets a solution to the 2SUM and 3SUM problem.
 
 - **3SUM:** Return a combination of three different indicies from a collection of integers whose corresponding elements add up to a target value.
 
----
 
 **POST json format example**
 
@@ -28,13 +24,12 @@ Gets a solution to the 2SUM and 3SUM problem.
 
 where,
 
-**collection**: is comma seperated list of numbers,
+- collection: is comma seperated list of numbers,
 
-**target**: is the what the sum of the combination should,
+- target: is the what the sum of the combination should,
 
-**mode**: can take values: "two" (for 2SUM) and "three" (for 3SUM)
+- mode: can take values: "two" (for 2SUM) and "three" (for 3SUM)
 
-----
 
 **Response example**
 
