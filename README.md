@@ -1,8 +1,5 @@
 # **Endpoints**
 
-## Trees
-
-#### /trees/lca
 
 ## Miscellaneous
 
@@ -22,8 +19,8 @@
 	}
 	```
 		
-		where,
-		number: the integer in base 10
+	where,
+	number: the integer in base 10
 	
 	**Response example**
 	```
@@ -43,8 +40,8 @@
 	}
 	```
 		
-		where,
-		roman: the roman numeral to be converted
+	where,
+	roman: the roman numeral to be converted
 	
 	**Response example**
 	```
