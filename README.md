@@ -1,8 +1,59 @@
 # **Endpoints**
 
+## Trees
+
+#### /trees/lca
+
 ## Miscellaneous
 
-#### /sumToTarget
+#### **/romans**
+
+**URIs:**
+
+- /romans/iTor
+	
+	Converts an integer (base 10) to a roman numeral
+	
+	**POST json format example**
+
+	```
+	{
+	  "number" : "10"
+	}
+	```
+		
+		where,
+		number: the integer in base 10
+	
+	**Response example**
+	```
+	{
+	  "roman": "X",
+	}
+	```
+-  /romans/rToi
+
+	Converts a roman numeral to integer (base 10)
+	
+	**POST json format example**
+
+	```
+	{
+	  "roman" : "CC"
+	}
+	```
+		
+		where,
+		roman: the roman numeral to be converted
+	
+	**Response example**
+	```
+	{
+	  "number": "200",
+	}
+	```
+
+#### **/sumToTarget**
 
 **URI:** https://puzzapi.herokuapp.com/sumToTarget
 
