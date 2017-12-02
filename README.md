@@ -1,5 +1,30 @@
 # **Endpoints**
 
+## Binary Trees
+
+**URIs:**
+
+- /trees/lca
+	
+	Returns the lowest common ancestor (node farthest from the root common to a couple of nodes in the tree)
+	
+	**POST json format example**
+
+	```
+	{
+		"tree": "20,8,4,-1,-1,12,10,-1,-1,14,-1,-1,22,-1,-1",
+		"node1": "8",
+		"node2": "4"
+	}
+	```
+	
+	**Response example**
+	```
+	{
+	  "lca": "8",
+	  "exists": True
+	}
+	```
 
 ## Miscellaneous
 
@@ -54,7 +79,7 @@
 
 **URI:** https://puzzapi.herokuapp.com/sumToTarget
 
-Gets a solution to the 2SUM and 3SUM problem.
+Returns a solution to the 2SUM and 3SUM problem.
 
 - **2SUM:** Return a combination of two different indices from a collection of integers whose corresponding elements add up to a target value.
 

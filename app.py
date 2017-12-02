@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 from misc import sumToK, romans
+from trees import treeUtil 
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -28,6 +30,7 @@ def sumToTarget():
 	else:
 		return jsonify({'error': "Wrong mode!"})
 
+#Romans
 @app.route('/romans/rToi', methods=['POST'])
 def rToi():
 	roman = request.json['roman']
@@ -38,14 +41,19 @@ def iTor():
 	numeral = request.json['number']
 	return jsonify({"roman": romans.intToRoman(int(numeral))})
 
-# @app.route('/trees/lca', methods=['POST'])
-# def trees_lca():
-# 	tree = request.json['tree']
-# 	node1 = request.json['node1']
-# 	node2 = request.json['node2']
 
-# 	# solution = binary.lca()
+#Trees
+@app.route('/trees/lca', methods=['POST'])
+def trees_lca():
+	tree = request.json['tree'].split(",")
+	node1 = request.json['node1']
+	node2 = request.json['node2']
 
+	lca = treeUtil.getLCA(tree, node1, node2)
+	if lca == None:
+		return jsonify({"lca": "None", "exists": False})
+	else:
+		return jsonify({"lca": lca.data, "exists": True})
 
 if __name__ == '__main__':
 	app.run()
